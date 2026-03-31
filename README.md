@@ -91,13 +91,15 @@ La rama `main` tiene todo el CSS en un único archivo monolítico `index.css`.
 **Conflicto esperado:** al hacer merge de `clean-css` a `main`, tendrán dos versiones completamente distintas del sistema de estilos. Deben integrarlas correctamente.
 
 El `index.html` de la rama `clean-css` importa los módulos así:
+
 ```html
-<link rel="stylesheet" href="styles/page.css" />
-<link rel="stylesheet" href="styles/header.css" />
-<link rel="stylesheet" href="styles/nav.css" />
-<link rel="stylesheet" href="styles/main.css" />
-<link rel="stylesheet" href="styles/team.css" />
-<link rel="stylesheet" href="styles/footer.css" />
+
+<link rel="stylesheet" href=".idea/styles/page.css"/>
+<link rel="stylesheet" href=".idea/styles/header.css"/>
+<link rel="stylesheet" href=".idea/styles/nav.css"/>
+<link rel="stylesheet" href=".idea/styles/main.css"/>
+<link rel="stylesheet" href=".idea/styles/team.css"/>
+<link rel="stylesheet" href=".idea/styles/footer.css"/>
 ```
 
 Deben decidir en equipo **cuál arquitectura conservar** (o combinar ambas) y actualizar `index.html` en consecuencia.
